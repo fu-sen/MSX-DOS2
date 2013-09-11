@@ -1,0 +1,38 @@
+FORMAT
+-----------------------------------------------------------
+内部コマンド
+MSXPLAYer では動作しません
+
+[ 機能 ]
+新しいフロッピーディスクを使用できるように初期化(フォーマット)します。
+
+[ 書式 ]
+FORMAT [<ドライブ名>]
+
+[ 文例 ]
+MSX-DOS2 では <ドライブ名> を指定する事ができます。
+<ドライブ名> を省略した場合、2.20 ではカレンドドライブが対象となります。
+2.30 以降ではドライブ名を訪ねます。
+
+以下は 2DD タイプの場合の一例として、
+A ドライブにあるフロッピーディスクを9セクター 2DD で初期化しています。
+(ドライブによって表示は異なります。)
+
+	A>FORMAT
+	Drive name? (A,B) A
+
+	Drive Type
+	1 - Single sided
+	2 - Double sided
+
+	? 2
+	
+	All data drive A: will be destroyed
+	Press any key to contiune
+	Format complete
+
+	A>■
+
+中断を行なう場合は [CTRL]+[C] キーによって行ないます。
+
+BASIC では CALL FORMAT（_FORMAT）に該当します。
