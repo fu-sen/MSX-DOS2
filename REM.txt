@@ -1,20 +1,20 @@
 REM
 -----------------------------------------------------------
-�����R�}���h
+内部コマンド
 
-[ �@�\ ]
-�������܂���B
+[ 機能 ]
+何もしません。
 
-[ ���� ]
-REM [<�R�����g>]
+[ 書式 ]
+REM [<コメント>]
 
-[ ���� ]
+[ 文例 ]
 REM I love milk.
 
-[ ��� ]
-REM �͉������s�͍s�Ȃ��܂���B
-MSX-DOS(1) �ł̓R�}���h�s����ʂɏo�͂���܂������AMSX-DOS2 �ł͐ݒ�ɂ��o�͂���܂���B�o�͂��s�����߂ɂ� ECHO ���߂�p���܂��B
-REM �� BASIC �� REM�i'�j���ɊY�����܂��B
+[ 解説 ]
+REM は何も実行は行なわれません。
+MSX-DOS(1) ではコマンド行が画面に出力されましたが、MSX-DOS2 では設定により出力されません。出力を行うためには ECHO 命令を用います。
+REM は BASIC の REM（'）文に該当します。
 
-[ �Q�l ]
-ECHO�EPAUSE
+[ 参考 ]
+ECHO・PAUSE

@@ -1,24 +1,24 @@
 FIXDISK
 -----------------------------------------------------------
-�O���R�}���h
+外部コマンド
 
-[ �@�\ ]
-�f�B�X�N�� MSX-DOS2 �t�H�[�}�b�g�ɂ��܂��B
+[ 機能 ]
+ディスクを MSX-DOS2 フォーマットにします。
 
-[ ���� ]
-FIXDISK [<�I�v�V����>] [<�h���C�u��>]
+[ 書式 ]
+FIXDISK [<オプション>] [<ドライブ名>]
 
-[ ���� ]
+[ 文例 ]
 FIXDISK B:
-B �h���C�u�̃f�B�X�N�� MSX-DOS2 �t�H�[�}�b�g�ɂ��܂��B
+B ドライブのディスクを MSX-DOS2 フォーマットにします。
 
 FIXDISK /S B:
-B �h���C�u�̃f�B�X�N���u�[�g�Z�N�^���܂߂� MSX-DOS2 �t�H�[�}�b�g�ɂ��܂��B
+B ドライブのディスクをブートセクタも含めて MSX-DOS2 フォーマットにします。
 
-[ ��� ]
-<�I�v�V����> �͈ȉ��̒ʂ�ł��B
+[ 解説 ]
+<オプション> は以下の通りです。
 
-	/S	�u�[�g�Z�N�^�� MSX-DOS2 �t�H�[�}�b�g�ɂ��܂��B
+    /S ブートセクタも MSX-DOS2 フォーマットにします。
 
-MSX-DOS(1) �� MS-DOS �Ńt�H�[�}�b�g���ꂽ�f�B�X�N�� MSX-DOS2 �t�H�[�}�b�g�ɂ��鎞�Ɏg���܂��B�܂� MSX-DOS2 �̃u�[�g�Z�N�^�����������ꍇ�̏C���ɂ��g���܂��B
-MSX-DOS2 �Ƃ͋K�i�O�ł���A�v���P�[�V�����f�B�X�N�ɑ΂��Ď��s����ƁA���̃f�B�X�N�̓��e���j������A�N���ł��Ȃ��Ȃ�ꍇ������܂��B���̂��� FIXDISK �ł͎��s�O�Ɋm�F���b�Z�[�W���\������܂��B
+MSX-DOS(1) や MS-DOS でフォーマットされたディスクを MSX-DOS2 フォーマットにする時に使えます。また MSX-DOS2 のブートセクタがおかしい場合の修正にも使えます。
+MSX-DOS2 とは規格外であるアプリケーションディスクに対して実行すると、そのディスクの内容が破損され、起動できなくなる場合もあります。そのため FIXDISK では実行前に確認メッセージが表示されます。

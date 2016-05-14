@@ -1,14 +1,13 @@
 BASIC
 -----------------------------------------------------------
-�����R�}���h
+内部コマンド
 
-[ �@�\ ]
-MSX-Disk BASIC �ɐ�����ڂ��܂��B
+[ 機能 ]
+MSX-Disk BASIC に制御を移します。
 
-[ ���� ]
-BASIC [<�t�@�C����>]
+[ 書式 ]
+BASIC [<ファイル名>]
 
-[ ��� ]
-<�t�@�C����> ������ƁABASIC �N�����ɂ��̃t�@�C�����ǂݍ��܂�A���s����܂��BBASIC �݂̂̏ꍇ�͋N���݂̂��s�Ȃ��܂��B
-BASIC ���� MSX-DOS �ɖ߂�ꍇ�� CALL SYSTEM �R�}���h(_SYSTEM)��p���܂��BCALL SYSTEM(<�R�}���h>) �ɂ��R�}���h�w�肪����ꍇ�͂��̃R�}���h�����s���܂����A�ȗ�����Ă���ꍇ�̓o�b�`�t�@�C�� REBOOT.BAT ��T���A���݂��Ă���ꍇ�͂����s����܂��B
-
+[ 解説 ]
+<ファイル名> を入れると、BASIC 起動時にそのファイルが読み込まれ、実行されます。BASIC のみの場合は起動のみが行なわれます。
+BASIC から MSX-DOS に戻る場合は CALL SYSTEM コマンド(_SYSTEM)を用います。CALL SYSTEM(<コマンド>) によるコマンド指定がある場合はそのコマンドを実行しますが、省略されている場合はバッチファイル REBOOT.BAT を探し、存在している場合は実行されます。

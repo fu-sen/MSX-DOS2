@@ -1,79 +1,78 @@
 SET
 -----------------------------------------------------------
-�����R�}���h
+内部コマンド
 
-[ �@�\ ]
-���ϐ��̐ݒ�E�\�����s���܂��B
+[ 機能 ]
+環境変数の設定・表示を行います。
 
-[ ���� ]
-SET [<�ϐ�>[=[<�l>]]]
+[ 書式 ]
+SET [<変数>[=[<値>]]]
 
-[ ��� ]
-SET �݂̂̏ꍇ�͐ݒ肵�Ă���S�Ă̊��ϐ��Ƃ��̒l��\�����܂��B
+[ 解説 ]
+SET のみの場合は設定している全ての環境変数とその値を表示します。
 
-SET <�ϐ�> �̏ꍇ�͊��ϐ� <�ϐ�> �Ƃ��̒l��\�����܂��B
+SET <変数> の場合は環境変数 <変数> とその値を表示します。
 
-SET <�ϐ�>=<�l> �̏ꍇ�͊��ϐ� <�ϐ�> �� <�l> �ɕύX���܂��B<�l> ���ȗ������ꍇ�͂��� <�ϐ�> ���������鎖�ɂȂ�܂��B
+SET <変数>=<値> の場合は環境変数 <変数> を <値> に変更します。<値> を省略した場合はその <変数> を除去する事になります。
 
-�f�t�H���g�Őݒ肳��Ă�����ϐ��͈ȉ��̒ʂ�ł��B
+デフォルトで設定されている環境変数は以下の通りです。
 
-	ECHO	�o�b�`�t�@�C�����s���̃R�}���h�o�͗L���B
-		ON �܂��� on �ŏo�́A���̈ȊO�͔�o�͂ƂȂ�܂��B
-		�f�t�H���g�� OFF �ł��B�iMSX-DOS(1) �Ƃ͈قȂ�܂��B�j
+    ECHO       バッチファイル実行時のコマンド出力有無。
+               ON または on で出力、その以外は非出力となります。
+               デフォルトは OFF です。（MSX-DOS(1) とは異なります。）
 
-	PROMPT	�v�����v�g�̃f�B���N�g���\���L���B
-		ON �܂��� on �̏ꍇ�̓f�B���N�g�����܂߂ĕ\���A
-		����ȊO�̓h���C�u���݂̂��\������܂��B
-		�f�t�H���g�� OFF �ł��B
+    PROMPT     プロンプトのディレクトリ表示有無。
+               ON または on の場合はディレクトリを含めて表示、
+               それ以外はドライブ名のみが表示されます。
+               デフォルトは OFF です。
 
-	PATH	�R�}���h�����p�X�B; ��؂�ł��B
+    PATH       コマンド検索パス。; 区切りです。
 
-	SHELL	�R�}���h�C���^�[�v���^ COMMAND2.COM �̏ꏊ�B
+    SHELL      コマンドインタープリタ COMMAND2.COM の場所。
 
-	TIME	�����̕\���`���B
-		24 �̏ꍇ��24���ԕ\�L�A
-		����ȊO��12���ԕ\�L�Ƃ��� a �܂��� p ��t�����܂��B
+    TIME       時刻の表示形式。
+               24 の場合は24時間表記、
+               それ以外は12時間表記として a または p を付加します。
 
-	DATE	���t�̌`���B
-		�Z�p���[�^�ŋ�؂����R�����ŕ\�����܂��B
-		�f�t�H���g�͎g�p����鍑�ɍ��킹�Ă��ƂȂ�܂��B
+    DATE       日付の形式。
+               セパレータで区切った３文字で表現します。
+               デフォルトは使用される国に合わせてことなります。
 
-	HELP	�w���v�t�@�C���̏ꏊ�B
-		2.30 �ȍ~�ł� ANK ���[�h�̃w���v�t�@�C���ꏊ�B
-		�f�t�H���g�ł͋N���h���C�u�� \HELP �ł��B
+    HELP       ヘルプファイルの場所。
+               2.30 以降では ANK モードのヘルプファイル場所。
+               デフォルトでは起動ドライブの \HELP です。
 
-	KHELP	2.30 �ȍ~�L���B�������[�h�̃w���v�t�@�C���ꏊ�B
-		�f�t�H���g�ł͋N���h���C�u�� \KHELP �ł��B
+    KHELP      2.30 以降有効。漢字モードのヘルプファイル場所。
+               デフォルトでは起動ドライブの \KHELP です。
 
-	APPEND	CP/M �v���O�������s���̃t�@�C�������f�B���N�g���B
-		CP/M �̓f�B���N�g���Ƃ����d�l���Ȃ����߁A
-		�t�@�C�����݂̂Ńt�@�C���A�N�Z�X�����݂܂��B
-		�J�����g�h���C�u�E�f�B���N�g���ɑ��݂��Ȃ��ꍇ��
-		���ϐ� APPEND �ɋL�ڂ��Ă���p�X���������A
-		���݂��Ă���΁A���̃t�@�C�����A�N�Z�X���܂��B
-		�f�t�H���g�ł͔��`�ł��B
+    APPEND     CP/M プログラム実行時のファイル検索ディレクトリ。
+               CP/M はディレクトリという仕様がないため、
+               ファイル名のみでファイルアクセスを試みます。
+               カレントドライブ・ディレクトリに存在しない場合は
+               環境変数 APPEND に記載しているパスを検索し、
+               存在していれば、そのファイルをアクセスします。
+               デフォルトでは非定義です。
 
-	TEMP	�e���|�����t�@�C���̏ꏊ�B
-		RAM �f�B�X�N�Ɏw�肷��ƍ����ɂȂ�֗��ł��B
-		�f�t�H���g�ł͋N���h���C�u�̃��[�g�f�B���N�g���ł��B
+    TEMP       テンポラリファイルの場所。
+               RAM ディスクに指定すると高速になり便利です。
+               デフォルトでは起動ドライブのルートディレクトリです。
 
-	UPPER	�O���R�}���h�ւ̎󂯓n���ɂ�����啶���ϊ��L���B
-		ON �܂��� on �̏ꍇ�͑啶���ɕϊ��BCP/M �݊��B
-		����ȊO�͂��̂܂܎󂯓n����܂��B
-		�f�t�H���g�� OFF �ł��B
+    UPPER      外部コマンドへの受け渡しにおける大文字変換有無。
+               ON または on の場合は大文字に変換。CP/M 互換。
+               それ以外はそのまま受け渡されます。
+               デフォルトは OFF です。
 
-	REDIR	���_�C���N�V�����E�p�C�v���������̗L���B
-		ON �܂��� on �̏ꍇ�� COMMAND2.COM ���������܂��B
-		����ȊO�̏ꍇ�͂��̂܂܊O���R�}���h�֓n����܂��B
-		�f�t�H���g�� ON �ł��B
+    REDIR      リダイレクション・パイプ文字処理の有無。
+               ON または on の場合は COMMAND2.COM が処理します。
+               それ以外の場合はそのまま外部コマンドへ渡されます。
+               デフォルトは ON です。
 
-	EXPERT	2.30 �ȍ~�L���B
-		MSX-DOS(1) �t�H�[�}�b�g�f�B�X�N�ł̃v���O�������s�L���B
-		ON �܂��� on �̏ꍇ�͎��s�\�B
-		����ȊO�̏ꍇ�͎��s�֎~�B
-		�f�t�H���g�͔�ݒ�Ŏ��s�֎~�ɂȂ��Ă��܂��B
+    EXPERT     2.30 以降有効。
+               MSX-DOS(1) フォーマットディスクでのプログラム実行有無。
+               ON または on の場合は実行可能。
+               それ以外の場合は実行禁止。
+               デフォルトは非設定で実行禁止になっています。
 
-	PROGRAM	COMMAND2.COM ���g�p���܂��B
+    PROGRAM    COMMAND2.COM が使用します。
 
-	PARAMETERS
-		COMMAND2.COM ���g�p���܂��B
+    PARAMETERS COMMAND2.COM が使用します。

@@ -1,14 +1,14 @@
 VER
 -----------------------------------------------------------
-�����R�}���h
+内部コマンド
 
-[ �@�\ ]
-MSX-DOS2 �̃o�[�W������\�����܂��B
+[ 機能 ]
+MSX-DOS2 のバージョンを表示します。
 
-[ ���� ]
+[ 書式 ]
 VER
 
-[ ���� ]
+[ 文例 ]
 
 A>VER
 MSX-DOS Kernel version 2.31
@@ -16,15 +16,15 @@ MSXDOS2.SYS version 2.31
 COMMAND2.COM version 2.31
 Copyright 1990 ASCII Corporation
 
-[ ��� ]
-�o�͂����o�[�W�����̍\���͈ȉ��̒ʂ�ł��B
+[ 解説 ]
+出力されるバージョンの構成は以下の通りです。
 
-��: 2.31 �̏ꍇ
+例: 2.31 の場合
 
-	2	MSX-DOS �̎�o�[�W�����ԍ��BMSX-DOS2 �ł͏�� 2�B
-	3	�o�[�W�����ԍ��B�d�v�ȋ@�\�̒ǉ����ꂽ�ꍇ���ɒǉ��B
-	1	�����[�X�ԍ��B�}�C�i�[�`�F���W����ǁE�C�����ɒǉ��B
+    2 MSX-DOS の主バージョン番号。MSX-DOS2 では常に 2。
+    3 バージョン番号。重要な機能の追加された場合等に追加。
+    1 リリース番号。マイナーチェンジや改良・修正時に追加。
 
-MSX-DOS(1) �̓}�C�N���\�t�g�ō쐬����Ă��܂����A
-MSX-DOS2�i������ ���{�� MSX-DOS2�j�̊J���͌��X�A�X�L�[�Ői�߂�ꂽ���߁A
-2.20�`2.31 �ł̓A�X�L�[�̒���\���ƂȂ��Ă��܂��B
+MSX-DOS(1) はマイクロソフトで作成されていますが、
+MSX-DOS2（正式名 日本語 MSX-DOS2）の開発は元々アスキーで進められたため、
+2.20～2.31 ではアスキーの著作表示となっています。
