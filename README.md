@@ -9,4 +9,4 @@ Windows では メモ帳 を使用可能です。<br />
 MSX で用いる場合はシフト JIS への変換が必要になります。<br />
 半角 ￥ は環境によって 半角 ＼ で表示されている事にご注意下さい。
 
-* MSX JAPAN http://msxjpn.jimdo.com/
+* MSX JAPAN▉ https://msxjpn.jimdo.com/
