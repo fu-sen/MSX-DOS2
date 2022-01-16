@@ -1,6 +1,8 @@
-## MSX-DOS2
+## MSX-DOS2 コマンドリファレンス
 
-日本語 MSX-DOS2 Version 2.20?2.31 をベースに記載していますが、\
+**MSX-DOS2 command reference (Japanese)**
+
+日本語 MSX-DOS2 Version 2.20～2.31 をベースに記載していますが、\
 エミュレータ等の独特な動作に関しても記載を行っているコマンドがあります。
 
 .txt ファイルは文字コード UTF-8、改行コード CR+LF で記載しています。\
